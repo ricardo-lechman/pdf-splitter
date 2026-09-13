@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>760</width><height>650</height></rect></property>
+  <property name="windowTitle"><string>PDF Splitter</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item><layout class="QGridLayout" name="pathsLayout">
+     <item row="0" column="0"><widget class="QLabel" name="labelPdf"><property name="text"><string>PDF:</string></property></widget></item>
+     <item row="0" column="1"><widget class="QLineEdit" name="txtPdf"><property name="readOnly"><bool>true</bool></property></widget></item>
+     <item row="0" column="2"><widget class="QPushButton" name="btnSeleccionarPdf"><property name="text"><string>Seleccionar...</string></property></widget></item>
+     <item row="1" column="0"><widget class="QLabel" name="labelDestino"><property name="text"><string>Destino:</string></property></widget></item>
+     <item row="1" column="1"><widget class="QLineEdit" name="txtDestino"><property name="readOnly"><bool>true</bool></property></widget></item>
+     <item row="1" column="2"><widget class="QPushButton" name="btnDestino"><property name="text"><string>Examinar...</string></property></widget></item>
+    </layout></item>
+    <item><layout class="QHBoxLayout" name="toolsLayout">
+     <item><widget class="QLabel" name="labelHelp"><property name="text"><string>Escriba o pegue los nombres, uno por fila.</string></property></widget></item>
+     <item><spacer name="horizontalSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+     <item><widget class="QPushButton" name="btnCompletarSecuencia"><property name="text"><string>Completar secuencia</string></property></widget></item>
+    </layout></item>
+    <item><widget class="QTableWidget" name="tblPaginas"><property name="columnCount"><number>2</number></property><column><property name="text"><string>Página</string></property></column><column><property name="text"><string>Nombre del archivo</string></property></column></widget></item>
+    <item><widget class="QProgressBar" name="progressBar"><property name="value"><number>0</number></property></widget></item>
+    <item><layout class="QHBoxLayout" name="bottomLayout"><item><layout class="QVBoxLayout" name="statusLayout"><item><widget class="QLabel" name="lblEstado"><property name="text"><string>Listo.</string></property></widget></item><item><widget class="QLabel" name="lblCopyright"><property name="text"><string>Propiedad intelectual de Ricardo Lechman. Todos los derechos reservados.</string></property><property name="styleSheet"><string notr="true">color: #666666; font-size: 10px;</string></property></widget></item></layout></item><item><spacer name="bottomSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item><item><widget class="QPushButton" name="btnGenerar"><property name="text"><string>Generar PDFs</string></property></widget></item></layout></item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/><connections/>
+</ui>

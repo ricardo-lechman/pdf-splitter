@@ -1,0 +1,103 @@
+1099 INFO: PyInstaller: 6.19.0, contrib hooks: 2026.7
+1107 INFO: Python: 3.13.11
+1151 INFO: Platform: Windows-10-10.0.19045-SP0
+1153 INFO: Python environment: D:\aplicacion pdf pyton\.venv
+1160 INFO: wrote D:\aplicacion pdf pyton\PDF-Splitter.spec
+1183 INFO: Removing temporary files and cleaning cache in C:\Users\Ricky\AppData\Local\pyinstaller
+1192 INFO: Module search paths (PYTHONPATH):
+['D:\\aplicacion pdf pyton',
+ 'C:\\Program Files\\Python313\\python313.zip',
+ 'C:\\Program Files\\Python313\\DLLs',
+ 'C:\\Program Files\\Python313\\Lib',
+ 'C:\\Program Files\\Python313',
+ 'D:\\aplicacion pdf pyton\\.venv',
+ 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages',
+ 'D:\\aplicacion pdf pyton\\src']
+2896 INFO: Appending 'datas' from .spec
+2898 INFO: checking Analysis
+2899 INFO: Building Analysis because Analysis-00.toc is non existent
+2899 INFO: Looking for Python shared library...
+2900 INFO: Using Python shared library: C:\Program Files\Python313\python313.dll
+2900 INFO: Running Analysis Analysis-00.toc
+2901 INFO: Target bytecode optimization level: 0
+2901 INFO: Initializing module dependency graph...
+2909 INFO: Initializing module graph hook caches...
+2998 INFO: Analyzing modules for base_library.zip ...
+11085 INFO: Processing standard module hook 'hook-encodings.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+33396 INFO: Processing standard module hook 'hook-pickle.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+41582 INFO: Processing standard module hook 'hook-heapq.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+45751 INFO: Caching module dependency graph...
+46028 INFO: Analyzing D:\aplicacion pdf pyton\src\main.py
+46074 INFO: Processing standard module hook 'hook-PySide6.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+47893 INFO: Processing standard module hook 'hook-shiboken6.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+49418 INFO: Processing standard module hook 'hook-PySide6.QtNetwork.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+64562 INFO: Processing standard module hook 'hook-PySide6.QtCore.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+86483 INFO: Processing standard module hook 'hook-PySide6.QtWidgets.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+109810 INFO: Processing standard module hook 'hook-PySide6.QtGui.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+246709 INFO: Processing standard module hook 'hook-PySide6.QtUiTools.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+259457 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+259469 INFO: SetuptoolsInfo: initializing cached setuptools info...
+284995 INFO: Processing standard module hook 'hook-xml.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+285026 INFO: Processing standard module hook 'hook-xml.dom.domreg.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+295082 INFO: Processing standard module hook 'hook-platform.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+295565 INFO: Processing standard module hook 'hook-sysconfig.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+295607 INFO: Processing standard module hook 'hook-_ctypes.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+301013 INFO: Processing module hooks (post-graph stage)...
+301093 INFO: Processing standard module hook 'hook-PySide6.QtOpenGLWidgets.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+336049 INFO: Processing standard module hook 'hook-PySide6.QtOpenGL.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+353300 INFO: Performing binary vs. data reclassification (123 entries)
+353673 INFO: Looking for ctypes DLLs
+353764 INFO: Analyzing run-time hooks ...
+353770 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+353785 INFO: Including run-time hook 'pyi_rth_pyside6.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+353796 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+353809 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from 'D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+353883 INFO: Creating base_library.zip...
+354077 INFO: Looking for dynamic libraries
+358593 INFO: Extra DLL search directories (AddDllDirectory): ['D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\shiboken6']
+358594 INFO: Extra DLL search directories (PATH): ['D:\\aplicacion pdf pyton\\.venv\\Lib\\site-packages\\PySide6']
+370176 INFO: Warnings written to D:\aplicacion pdf pyton\build\PDF-Splitter\warn-PDF-Splitter.txt
+370313 INFO: Graph cross-reference written to D:\aplicacion pdf pyton\build\PDF-Splitter\xref-PDF-Splitter.html
+370419 INFO: checking PYZ
+370566 INFO: checking PKG
+370567 INFO: Building PKG because PKG-00.toc is non existent
+370568 INFO: Building PKG (CArchive) PDF-Splitter.pkg
+439755 INFO: Building PKG (CArchive) PDF-Splitter.pkg completed successfully.
+439785 INFO: Bootloader D:\aplicacion pdf pyton\.venv\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+439789 INFO: checking EXE
+439791 INFO: Building EXE because EXE-00.toc is non existent
+439791 INFO: Building EXE from EXE-00.toc
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\aplicacion pdf pyton\.venv\Lib\site-packages\PyInstaller\__main__.py", line 321, in <module>
+    run()
+    ~~~^^
+  File "D:\aplicacion pdf pyton\.venv\Lib\site-packages\PyInstaller\__main__.py", line 215, in run
+    run_build(pyi_config, spec_file, **vars(args))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\aplicacion pdf pyton\.venv\Lib\site-packages\PyInstaller\__main__.py", line 70, in run_build
+    PyInstaller.building.build_main.main(pyi_config, spec_file, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\aplicacion pdf pyton\.venv\Lib\site-packages\PyInstaller\building\build_main.py", line 1275, in main
+    build(specfile, distpath, workpath, clean_build)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\aplicacion pdf pyton\.venv\Lib\site-packages\PyInstaller\building\build_main.py", line 1213, in build
+    exec(code, spec_namespace)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\aplicacion pdf pyton\PDF-Splitter.spec", line 19, in <module>
+    exe = EXE(
+        pyz,
+    ...<16 lines>...
+        entitlements_file=None,
+    )
+  File "D:\aplicacion pdf pyton\.venv\Lib\site-packages\PyInstaller\building\api.py", line 675, in __init__
+    self.__postinit__()
+    ~~~~~~~~~~~~~~~~~^^
+  File "D:\aplicacion pdf pyton\.venv\Lib\site-packages\PyInstaller\building\datastruct.py", line 184, in __postinit__
+    self.assemble()
+    ~~~~~~~~~~~~~^^
+  File "D:\aplicacion pdf pyton\.venv\Lib\site-packages\PyInstaller\building\api.py", line 769, in assemble
+    os.remove(self.name)
+    ~~~~~~~~~^^^^^^^^^^^
+PermissionError: [WinError 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: 'D:\\aplicacion pdf pyton\\dist\\PDF-Splitter.exe'
