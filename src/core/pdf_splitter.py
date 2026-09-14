@@ -51,3 +51,27 @@ def split_pdf(pdf_path: str | Path, destination: str | Path, names: Sequence[str
         raise PdfSplitterError(f"No se pudo guardar el archivo: {error}") from error
     except Exception as error:
         raise PdfSplitterError("No se pudieron generar los PDFs.") from error
+
+
+def merge_pdfs(pdf_paths: Sequence[str | Path], output_path: str | Path) -> Path:
+    """Une los PDFs, en el orden recibido, en un único archivo local."""
+    if not pdf_paths:
+        raise PdfSplitterError("Seleccione al menos un PDF para unir.")
+    try:
+        writer = PdfWriter()
+        for pdf_path in pdf_paths:
+            reader = PdfReader(str(pdf_path))
+            if reader.is_encrypted:
+                raise PdfSplitterError(f"El PDF '{Path(pdf_path).name}' está protegido con contraseña.")
+            writer.append(reader)
+        result = Path(output_path)
+        with result.open("wb") as output_file:
+            writer.write(output_file)
+        writer.close()
+        return result
+    except PdfSplitterError:
+        raise
+    except OSError as error:
+        raise PdfSplitterError(f"No se pudo guardar el archivo unido: {error}") from error
+    except Exception as error:
+        raise PdfSplitterError("No se pudieron unir los PDFs seleccionados.") from error
