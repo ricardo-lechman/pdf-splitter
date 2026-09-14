@@ -1,0 +1,40 @@
+name: Crear ejecutable para Linux
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build-linux:
+    name: Compilar PDF Splitter (Ubuntu)
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Preparar Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install PySide6==6.11.1 pypdf==6.14.2 pyinstaller==6.19.0
+
+      - name: Generar ejecutable portable
+        run: |
+          bash build_linux.sh
+          chmod +x dist/PDF-Splitter
+          tar -C dist -czf PDF-Splitter-linux-x86_64.tar.gz PDF-Splitter
+
+      - name: Publicar archivo para descargar
+        uses: actions/upload-artifact@v4
+        with:
+          name: PDF-Splitter-linux-x86_64
+          path: PDF-Splitter-linux-x86_64.tar.gz
+          if-no-files-found: error
+          retention-days: 30
